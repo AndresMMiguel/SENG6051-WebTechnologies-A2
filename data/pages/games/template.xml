@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE category [
+<!ELEMENT category (game*)>
+	<!ELEMENT game (name, description, subject, grade, tag*, cost?, equipment+, review*, picture+, url*, duration?, difficulty?, numPlayers)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT description (#PCDATA)>
+		<!ELEMENT subject (#PCDATA)>
+		<!ELEMENT grade (#PCDATA)>
+		<!ELEMENT tag (#PCDATA)>
+		<!ELEMENT cost (#PCDATA)>
+		<!ELEMENT equipment (eqName, addCost)>
+			<!ELEMENT eqName (#PCDATA)>
+			<!ELEMENT addCost (#PCDATA)>
+				<!ATTLIST addCost costAttr (additional|included) #REQUIRED>
+		<!ELEMENT review (#PCDATA)>
+			<!ATTLIST review score (0|1|2|3|4|5) #REQUIRED>
+		<!ELEMENT picture (#PCDATA)>
+		<!ELEMENT url (#PCDATA)>
+		<!ELEMENT duration (#PCDATA)> <!-- Estimated time duration -->
+		<!ELEMENT difficulty (#PCDATA)> <!-- Difficulty of the game -->
+		<!ELEMENT numPlayers (#PCDATA)> <!-- Number of players that can play -->
+		<!ENTITY Math "Mathematics">
+		<!ENTITY Geom "Geometry">
+]>
+
+<category>
+	<game>
+		<name></name>
+		<description></description>
+		<subject></subject>
+		<grade></grade>
+		<tag></tag>
+		<cost></cost>
+		<equipment>
+			<eqName></eqName>
+			<addCost></addCost>
+		</equipment>
+		<review></review>
+		<picture></picture>
+		<url></url>
+		<duration></duration>
+		<difficulty></difficulty>
+		<numPlayers></numPlayers>
+	</game>
+</category>

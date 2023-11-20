@@ -1,0 +1,610 @@
+/* Copyright © 2023 Andres Moreno Miguel | c3465977@uon.edu.au | All rights reserved.
+   AUTHOR: Andres Moreno Miguel
+   STUDENT ID: c3465977
+   FILE NAME: style.css
+   DATE: 31st July 2023
+*/
+
+body {
+    margin-left: 1cm;
+    margin-right: 1cm;
+    background-image: url('images/Background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    color: black;
+}
+
+.page-footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding: 1em 0;
+    background:#5A6E43;
+    text-align:center;
+    font-size: 12px;
+}
+
+.footer-line {
+    width: 100%;
+    height: 50%;
+}
+
+.footer-line ul{
+    display: inline-flex;
+    justify-content: center;
+    text-transform: uppercase;
+    flex-grow: 2;
+}
+
+.footer-line a {
+    margin: 0 2em;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-line a:hover {
+    color: #B3BAA9;
+}
+
+#pageMeta{
+    float: left;
+    margin: 0 0 0 1em;
+    font-weight: 500;
+    color: black;
+}
+
+#copyrightStatement {
+    float: right;
+    margin: 0 1em 0 0;
+    font-weight: 500;
+    color: black;
+}
+
+h1, h2 {
+    font-family: garamond, serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: underline;
+    letter-spacing: -1px;
+    padding: 1em 0;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 0 -0.5em;
+    width: fit-content;
+    background-color: rgb(90, 110, 67, 0.2);
+}
+
+strong {
+    font-weight: bold;
+}
+
+.resalted-text {
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 2px 2px#B3BAA9;
+}
+
+
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    height: 50px;
+    padding: 15px;
+    position: fixed;
+    left: 1cm;
+    right: 1cm;
+    top: 0;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #5A6E43;
+    box-shadow: 0 1px 8px #ddd;
+}
+
+.navbar li {
+    flex: auto ;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.left-aligned {
+    margin-right: auto;
+}
+.left-aligned li{
+    width: 100px;
+}
+
+.right-aligned {
+    margin-left: auto;
+}
+.right-aligned li{
+    width: 190px;
+}
+
+.navbar a {    
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.navbar a:link {
+    color: black;
+}
+.navbar a:visited {
+    color: white;
+}
+.navbar a:active {
+    color: yellow;
+}
+.navbar a:hover {
+    color: yellow;
+    font-size: 115%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    padding: 1em;
+    background-color: #5A6E43;
+    border: 1px dotted white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0 5px 5px 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    height: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+
+
+/* CONTENT */
+.content-header {
+    margin-top: 50px;
+    height: 200px;
+    padding: 3em;
+    text-align: center;
+    background: linear-gradient(to bottom,  rgb(255, 255, 255) 20%,rgba(255,255,255,0) 100%);
+}
+
+.content-header h1 {
+    padding: 0.5em 0 ;
+}
+
+.content-header p {
+    width: 40%;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 32px;
+}
+
+.content-body p{
+    padding: 1em 0;
+}
+
+
+/* GAME CARDS HOME */
+.game-card-categories {
+    display: flex;
+    margin: 0 0 3em;
+}
+
+.game-card-categories article{
+    width: 50%;
+}
+
+.game-card-categories h2{
+    text-align: center;
+}
+
+.featured-games {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-card {
+    width: 95%;
+    height: 300px;
+    align-self: center;
+    overflow: hidden;
+    margin: 0 0 2em 0;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgb(150, 150, 150);
+}
+
+.game-card-image {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.game-card img {
+    height: 115%;
+    transform-origin: center;
+}
+  
+.game-card:hover img {
+    transform: scale(1.2, 1.2);
+    transition: transform 0.4s ease-in-out;
+}
+
+.game-card-content {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    height: 100%;
+    width: 70%;
+}
+
+.game-card-name {
+    padding: 2em 2em 1em;
+}
+
+.game-card h4 {
+    letter-spacing: 0.1em;
+    font-family: Impact;
+    font-size: 22px;
+    font-weight: 100;
+    font-feature-settings: "smcp" on;
+    text-transform: uppercase;
+}
+
+.game-card-description {
+    padding: 1em 2em;
+    overflow: hidden;
+    flex: 1 1 auto;
+}
+
+.game-card-details {
+    padding: 1em 2em 2em;
+    text-align: end;
+}
+
+.game-card-details a {
+    text-decoration: none;
+    color: #5A6E43;
+}
+
+.game-card:hover h4 {
+    color: #5A6E43;
+    transition: color 0.3s ease-out;
+}
+
+
+/* GAMES */
+
+.game {
+    text-align: left;
+    width: 80%;
+    height: 600px;
+    align-self: center;
+    overflow: hidden;
+    margin: 2em auto;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgb(150, 150, 150);
+}
+
+.game-image {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.game img{
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.game-data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 70%;
+    float: right;
+    overflow: hidden;
+}
+
+.game-header {
+    flex: 10%;
+    margin: 0 3em;
+    border-bottom: 1px solid lightgrey;
+}
+
+.game-header-left {
+    float: left;
+    height: 100%;
+    width: 70%;
+}
+
+.game-header-right {
+    float: right;
+    height: 100%;
+    width: 30%;
+    align-items: center;
+    position: relative;
+}
+
+.game-subject {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1em 0 0;
+    height: fit-content;
+    width: fit-content;
+    color: #5A6E43;
+    text-transform: uppercase;
+    border: 1px solid #5A6E43;
+    padding: 7px;
+    opacity: 70%;
+}
+
+.game h2{
+    padding: 1em 0 0.5em 0;
+    color:black;
+    letter-spacing: 0.1em;
+    font-family: Impact;
+    font-size: 22px;
+    font-weight: 100;
+    font-feature-settings: "smcp" on;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.game h2:hover{
+    color: #5A6E43;
+    transition: color 0.3s ease-out;
+}
+
+.game-inline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 0 1em 0;
+    color: #5A6E43;
+    font-size: 12px;
+
+}
+.game-inline div {
+    margin: 0 3em 0 0;
+}
+
+.game-body {
+    flex: 80%;
+    margin: 0 3em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.game-body ul {
+    list-style: square;
+    text-align: left;
+    padding: 0;
+    margin-left: 1em;
+}
+
+.game-cost{
+    padding: 1em 0 0.5em 0;
+    color:red;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 300;
+    font-feature-settings: "smcp" on;
+    text-decoration: none;
+    text-align: center;
+}
+
+.game-reviews {
+    background-color: rgb(90, 110, 67, 0.2);
+    border-radius: 5px;
+    color: grey;
+    padding: 1em 1em 0;
+}
+
+.game-reviews ul{
+    list-style: circle;
+    text-align: left;
+    margin-left: 1em;
+    padding: 1em 0;
+}
+
+.game-footer {
+    flex: 10%;
+    margin: 0 3em 1em;
+    bottom:0;
+}
+
+.game-tags ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.game-tags li {
+    color: white;
+    text-transform: lowercase;
+    border-radius: 5px;
+    padding: 7px;
+    margin-left: 10px;
+    background-color: #5A6E43;
+}
+
+
+
+
+/* FORMS */
+.form-container {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin:auto;
+}
+
+.form-line {
+    margin: 3px;
+    width: 600px;
+    max-width: 600px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.form-line label{
+    vertical-align: middle;
+}
+
+.form-line textarea {    
+    flex: 2;
+    margin: 0;
+    max-width: 582px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.form-inline-btn-add{
+    margin: 0 0.9em 0 0.5em;
+    height: 30px;
+    float: right;
+    border-radius: 5px;
+    border: 1px solid #008000;
+    color: green;
+    background-color: #E5F2E5;
+}
+
+.form-inline-btn-remove{
+    margin: 0 1.1em 0 0.5em;
+    float: right;
+    border-radius: 5px;
+    border: 1px solid red;
+    color: red;
+    background-color: #FFE5E5;
+}
+
+.form-buttons {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.form-buttons button {
+    float: left;
+    width: 50%;
+    margin: 1em 0.5em;
+    padding: 0.8em;
+    cursor: pointer;
+    background-color: #B3BAA9;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.form-list{
+    list-style-type: square;
+    margin-left: 25px;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+/* Add games form */
+#newGameForm {
+    width: fit-content;
+    height: fit-content;
+    padding: 2em;
+    margin-bottom: 5em;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#newGameForm fieldset{
+    margin-top: 0.5em;
+    padding: 0 0.75em 0.75em 0.75em;
+    border: 1px solid #B3BAA9;
+}
+
+#newGameForm legend{
+    text-transform: uppercase;
+    color: #B3BAA9;
+    padding: 0.5em;
+}
+
+#newGameForm input, select {
+    flex: 2;
+    margin: 0.2em 0.8em;
+    height: 25px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    vertical-align: middle;
+}
+
+/* Contact form */
+#contactForm {
+    width: fit-content;
+    height: fit-content;
+    padding: 2em;
+    margin-bottom: 5em;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#contactForm input, select {
+    flex: 2;
+    margin: 0.2em 0.8em;
+    height: 25px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#contactForm input[type=radio] {
+    margin: 0;
+    vertical-align: middle;
+}
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE sports [
+<!ELEMENT sports (game)*>
+	<!ELEMENT game (name , description , subject , grade , tag* , cost? , equipment+ , review* , picture+ , url* , duration? , difficulty? , numPlayers)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT description (#PCDATA)>
+		<!ELEMENT subject (#PCDATA)>
+		<!ELEMENT grade (#PCDATA)>
+		<!ELEMENT tag (#PCDATA)>
+		<!ELEMENT cost (#PCDATA)>	
+		<!ELEMENT equipment (eqName , addCost)>
+			<!ELEMENT eqName (#PCDATA)>
+			<!ELEMENT addCost (#PCDATA)>
+				<!ATTLIST addCost costAttr (additional | included) #REQUIRED>
+		<!ELEMENT review (#PCDATA)>
+			<!ATTLIST review score (0 | 1 | 2 | 3 | 4 | 5) #REQUIRED>
+		<!ELEMENT picture (#PCDATA)>
+		<!ELEMENT url (#PCDATA)>
+		<!ELEMENT duration (#PCDATA)><!-- Estimated time duration -->
+		<!ELEMENT difficulty (#PCDATA)><!-- Difficulty of the game -->
+		<!ELEMENT numPlayers (#PCDATA)>	<!-- Number of players that can play -->
+<!ENTITY Math "Mathematics">
+<!ENTITY Geom "Geometry">
+]>
+<sports>
+	<game>
+		<!-- First -->
+		<name>Mathematical Basketball</name>
+		<description>Do you like basketball? Have you ever seen Michael Jordan flying above his oponents to dunk in their faces while smiling and sticking out his tongue? What great memories right? Maybe you aren't so good playing basketball, but don't worry, you will definitely enjoy this game, because you will be practicing your mathematical skills while playing basketball.</description>
+		<subject>&Math;</subject>
+		<grade>Grade 5</grade>
+		<tag>Run</tag>
+		<tag>Jump</tag>
+		<tag>Throw</tag>
+		<cost>AUD 50</cost>
+		<equipment>
+			<eqName>Ball</eqName>
+			<addCost costAttr="additional">AUD 30</addCost>
+		</equipment>
+		<review score="5">Amazing!</review>
+		<picture>/data/uploads/mathsbasket.jpg</picture>
+		<url>https://en.wikipedia.org/wiki/Basketball</url>
+		<duration>20 min</duration>
+		<difficulty>Low</difficulty>
+		<numPlayers>4</numPlayers>
+	</game>
+	<game>
+		<!-- Second -->
+		<name>Memory Race</name>
+		<description>Run Forest run! That's what your colleagues will say to encourage you to run faster in this relay race where you don't pass a baton to your team mate, you pass a fragment of poem by Sir William Shakespeare. The first team to complete the poem wins.</description>
+		<subject>English</subject>
+		<grade>Grade 5</grade>
+		<tag>Run</tag>
+		<cost>AUD 30</cost>
+		<equipment>
+			<eqName>Shakespeare's book</eqName>
+			<addCost costAttr="included">AUD 30</addCost>
+		</equipment>
+		<review score="0">It's boring</review>
+		<picture>/data/uploads/memoryrace.jpg</picture>
+		<url>https://en.wikipedia.org/wiki/Relay_race</url>
+		<duration>5 min</duration>
+		<difficulty>Medium</difficulty>
+		<numPlayers>3-12</numPlayers>
+	</game>
+	<game>
+		<!-- Third -->
+		<name>Tetris Ski</name>
+		<description>Revive this famous game of the '80s, but with a subtle hue... while skiing! You will never forget this enjoyable game, where you ski while wearing a Tetris block custom. You'll have to pass through your designated gates to add point and win the match. But, did you think you are the only one playing this? Of course not! You will have to join with your teammates wearing different block customs in order to fit through the special gates.</description>
+		<subject>&Geom;</subject>
+		<grade>Grade 5</grade>
+		<cost>AUD 300</cost>
+		<tag>Fun</tag>
+		<tag>Team</tag>		
+		<tag>Cold</tag>
+		<tag>Expensive</tag>
+		<equipment>
+			<eqName>Skies</eqName>
+			<addCost costAttr="additional">AUD 50</addCost>
+		</equipment>
+		<equipment>
+			<eqName>Tetris Custom</eqName>
+			<addCost costAttr="additional">AUD 45</addCost>
+		</equipment>
+		<review score="2">I crashed with the gate because I made a mistake with the shape.</review>
+		<review score="4">Super funny but quite demanding! I only recommend it for athletic people.</review>
+		<picture>/data/uploads/tetrisski.jpg</picture>
+		<url>https://en.wikipedia.org/wiki/Ski</url>
+		<duration>5 min</duration>
+		<difficulty>High</difficulty>
+		<numPlayers>5-10</numPlayers>
+	</game>
+</sports>

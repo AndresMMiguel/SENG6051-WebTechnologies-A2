@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Fri, 20 Oct 2023 13:33:00 +1100</pubDate><title><![CDATA[Home]]></title><url><![CDATA[index]]></url><meta><![CDATA[getsimple, easy, content management system]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Home]]></menu><menuOrder><![CDATA[1]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[<div class="content-header">
+	<h1>Learning Ladder</h1>
+
+	<p>Welcome to <abbr title="Learning Ladder">LL</abbr>!</p>
+
+	<p>We are thrilled to welcome you to our educational platform designed to take your skills and knowledge to the next level.</p>
+</div>
+
+<div class="content-body">
+	<p>At <span class="resalted-text">Learning Ladder</span>, we believe in the power of fun, continuing education and the ability of each individual to grow and thrive. Our commitment is to provide you with high-quality <strong>educational games</strong> that fit your lifestyle and goals. Our wide range of expertly taught games will give you the opportunity to learn in an interactive and enriching way. Join us as we climb rung by rung together towards success and lasting learning.</p>
+	<span style="font-size: 20px; font-style: italic; padding: 0.5rem; border-radius: 5px; display: flex; justify-content: center;"> Start your exciting learning journey with <abbr style="margin: 0 5px;" title="Learning Ladder"> LL </abbr> today! </span>
+
+	<p>In this webpage you will find the funniest games to learn some <abbr title="mathematics">maths</abbr>, geometry, and expand your memory skills! Aren't you excited to know more about them?? Just continue reading to discover them!!. If in the meantime you want to learn more about other kinds of learning ladders, click <span style="font-weight: bold;"><a href="https://learningladders.com.au/" style="color: #5A6E43" target="_blank">here</a></span>.</p>
+</div>
+<!-- Games list per category -->
+
+<div class="game-card-categories">
+	<article>
+	<header>
+	<h2>Sports</h2>
+	</header>
+
+	<div class="featured-games">
+		<ul class="games-list">
+			<li class="game-card">
+				<aside class="game-card-image"><img alt="Image could not be displayed" src="data/uploads/mathsBasket.jpg" /></aside>
+
+				<section class="game-card-content">
+				<header class="game-card-name">
+				<h4>Mathematical basketball</h4>
+				</header>
+
+				<div class="game-card-description">
+					<p>Do you like basketball? Have you ever seen <abbr title="Michael Jordan">MJ</abbr> flying above his oponents to dunk in their faces while smiling and sticking out his tongue? What great memories right? Maybe you aren't so good playing basketball, but don't worry, you will definitely enjoy this game, because you will be practicing your mathematical skills while playing basketball.</p>
+				</div>
+
+				<footer class="game-card-details"><a href="Games?category=sports#Mathematicalbasketball">Learn more <b>→</b></a></footer>
+				</section>
+			</li>
+			<li class="game-card">
+				<aside class="game-card-image"><img alt="Image could not be displayed" src="data/uploads/TetrisSki.jpg" /></aside>
+
+				<section class="game-card-content">
+				<header class="game-card-name">
+				<h4>Tetris ski</h4>
+				</header>
+
+				<div class="game-card-description">
+					<p>Revive this famous game of the <abbr title="1980 decade">'80s</abbr>, but with a subtle hue... while skiing! You will never forget this enjoyable game, where you ski while wearing a Tetris block custom. You'll have to pass through your designated gates to add point and win the match. But, did you think you are the only one playing this? Of course not! You will have to join with your teammates wearing different block customs in order to fit through the special gates.</p>
+				</div>
+
+				<footer class="game-card-details"><a href="Games?category=sports#TetrisSki">Learn more <b>→</b></a></footer>
+				</section>
+			</li>
+			<li class="game-card">
+				<aside class="game-card-image"><img alt="Image could not be displayed" src="data/uploads/MemoryRace.jpg" /></aside>
+
+				<section class="game-card-content">
+				<header class="game-card-name">
+				<h4>Memory race</h4>
+				</header>
+
+				<div class="game-card-description">
+					<p>Run Forest run! That's what your colleagues will say to encourage you to run faster in this relay race where you don't pass a baton to your team mate, you pass a fragment of poem by Sir <abbr title="William Shakespeare">WS</abbr>. The first team to complete the poem wins.</p>
+				</div>
+
+				<footer class="game-card-details"><a href="Games?category=sports#MemoryRace">Learn more <b>→</b></a></footer>
+				</section>
+			</li>
+		</ul>
+	</div>
+	</article>
+
+	<article>
+	<header>
+	<h2>Tabletop games</h2>
+	</header>
+
+	<div class="featured-games">
+		<ul class="games-list">
+			<li class="game-card">
+				<aside class="game-card-image"><img alt="Image could not be displayed" src="data/uploads/Blackjack.jpg" /></aside>
+
+				<section class="game-card-content">
+				<header class="game-card-name">
+				<h4>Blackjack</h4>
+				</header>
+
+				<div class="game-card-description">
+					<p>This card game pits players against the dealer. The objective of the game is to add 21 with the cards in your hand, but be careful! If you exceed 21 you will lose. With this game you will practice your counting skills.</p>
+				</div>
+
+				<footer class="game-card-details"><a href="Games?category=tabletop#Blackjack">Learn more <b>→</b></a></footer>
+				</section>
+			</li>
+			<li class="game-card">
+				<aside class="game-card-image"><img alt="Image could not be displayed" src="data/uploads/hanabi.jpg" /></aside>
+
+				<section class="game-card-content">
+				<header class="game-card-name">
+				<h4>Hanabi</h4>
+				</header>
+
+				<div class="game-card-description">
+					<p>In this cooperative card game,players work together to create five fireworks displays, each in a different color and numbered 1-5. Players hold their cards outward for only others to see. The goal is to give limited clues about each other's cards so they can play the cards in the correct order. Communication, memory and strategy are key to success in Hanabi.</p>
+				</div>
+
+				<footer class="game-card-details"><a href="Games?category=tabletop#Hanabi">Learn more <b>→</b></a></footer>
+				</section>
+			</li>
+			<li class="game-card">
+				<aside class="game-card-image"><img alt="Image could not be displayed" src="data/uploads/uno.png" /></aside>
+
+				<section class="game-card-content">
+				<header class="game-card-name">
+				<h4>Uno</h4>
+				</header>
+
+				<div class="game-card-description">
+					<p>This is a popular card game in which players compete to get rid of all their cards while applying specific rules. These rules contains addition operations. The player who plays his last card first wins. The game combines strategy, luck and quick decision making in a simple and entertaining format.</p>
+				</div>
+
+				<footer class="game-card-details"><a href="Games?category=tabletop#Uno">Learn more <b>→</b></a></footer>
+				</section>
+			</li>
+		</ul>
+	</div>
+	</article>
+</div>
+]]></content><private><![CDATA[]]></private><author><![CDATA[andres]]></author></item>

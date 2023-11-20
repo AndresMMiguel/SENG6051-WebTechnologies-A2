@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Sun, 15 Oct 2023 09:36:00 +1100</pubDate><title><![CDATA[Contact]]></title><url><![CDATA[contact]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Contact]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[<section class="content-header">
+<h1>Contact us</h1>
+
+<p>We love to hearing from you!</p>
+</section>
+
+<section class="content-body">
+<p>At <span class="resalted-text">Learning Ladder</span>, we value every interaction and inquiry. If you have questions, comments or ideas to share, feel free to contact us. Our team is here to listen to you and collaborate with you in our shared mission to improve education through gamification. Whether you are an enthusiastic educator, a curious learner or simply someone passionate about innovative learning, we look forward to hearing from you.</p>
+
+<p style="text-align: center;">Use the details provided below to reach out to us - we look forward to being part of your journey of educational discovery!</p>
+
+<div class="form-container">
+	<form action="https://jkorpela.fi/cgi-bin/echo.cgi" id="contactForm" method="post">
+	<h2 style="text-align: center;">How can we help?</h2>
+
+	<div class="form-line"><label for="firstName">First name:*</label> <input id="firstName" name="firstName" placeholder="First name" required="" type="text" /></div>
+
+	<div class="form-line"><label for="lastName">Last name:*</label> <input id="lastName" name="lastName" placeholder="Last name" required="" type="text" /></div>
+
+	<div class="form-line"><label for="email">Email address:*</label> <input id="email" name="email" placeholder="example@domain.com" required="" type="email" /></div>
+
+	<div class="form-line"><label for="phone">Phone Number:</label> <input id="phone" name="phone" placeholder="04..." type="tel" /></div>
+
+	<div class="form-line"><label for="state">State:</label> <select id="state" name="state"><option value="NSW">NSW</option><option value="QLD">QLD</option><option value="SA">SA</option><option value="TAS">TAS</option><option value="VIC">VIC</option><option value="WA">WA</option> </select> <label for="postcode">Postcode:</label> <input id="postcode" maxlength="4" name="postcode" size="4" type="text" /></div>
+
+	<div class="form-line"><label for="subject">Subject:*</label> <input id="subject" name="subject" placeholder="Subject" required="" type="text" /></div>
+
+	<div class="form-line"><label for="message">Your message:*</label></div>
+
+	<div class="form-line"><textarea id="message" name="message" placeholder="Message" required="" rows="5"></textarea></div>
+
+	<div class="form-line">Is your message urgent?*</div>
+
+	<div><input id="yes" name="messageUrgency" required="" type="radio" /> <label for="yes">Yes</label><br />
+		<input id="no" name="messageUrgency" type="radio" /> <label for="no">No</label></div>
+
+	<div class="form-buttons"><button type="submit">Submit</button><button type="reset">Clear</button></div>
+	</form>
+</div>
+</section>
+]]></content><private><![CDATA[]]></private><author><![CDATA[andres]]></author></item>
